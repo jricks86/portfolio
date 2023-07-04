@@ -222,7 +222,22 @@ section {
   margin: 1rem 0 0 3rem;
 }
 
-
+.home-content .span {
+  animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 3s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
 
 .portfolio {
   background: var(--second-bg-color);
@@ -269,6 +284,12 @@ section {
 
 .portfolio-box:hover img {
   transform: scale(1.1);
+}
+
+.portfolio-container .portfolio-box p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 

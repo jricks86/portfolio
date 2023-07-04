@@ -1,4 +1,5 @@
 import React from "react";
+import { Document, Page } from "react-pdf";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
           <h3>Hello, my name is</h3>
           <h1>Jessica Ricks</h1>
           <h3>
-            Welcome to <span>my portfolio!</span>
+            Welcome to my <span className="span">portfolio!</span>
           </h3>
 
           <div className="social-media">
@@ -22,7 +23,9 @@ const Home = () => {
               <i className="bx bxl-github"></i>
             </a>
           </div>
-          {/* <!-- <a href="#" class="btn">Resume</a> --> */}
+          <a href="https://career.io/r/L7aIuuak5" class="btn">
+            Resume
+          </a>
         </div>
         <div className="home-img">
           <img
